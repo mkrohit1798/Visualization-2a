@@ -1,0 +1,96 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <!-- <script src="./lib/d3.v4.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- link rels to be added later -->
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+    
+    
+    
+    <title>Lab 2a</title>
+    <style>  
+        .text-center{  
+        text-align: center;  
+        }  
+        body {
+        background-image:url("https://wallpapercave.com/wp/wp10821254.png");
+        }
+    </style>
+    </head>
+
+    <body>
+        <nav class="navbar-inverse">
+            <div class="container-fluid">
+                <ul>
+                    <li id="nav-home"><a href="#">Home</a></li>
+                    <li><a id="nav-screeplot" href="#">Scree Plot</a></li>
+                    <li><a id="nav-biplot" href="#">Biplot</a></li>
+                    <li><a id="nav-elbow" href="#">Elbow Method</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="home">
+                <h2>Attributes</h2>
+                <ol class="list-attributes">
+                    <li class="list-attributes-element">Min_OS: Min required Operating System(encoded as: Min_OS_coded)</li><br>
+                    <li class="list-attributes-element">Recom_OS: Recommended Operating System(encoded as: Recom_OS_coded)</li><br>
+                    <li class="list-attributes-element">Min_HDD_Space: Min required Hard Disk Space(encoded as: Min_HDD_coded)</li><br>
+                    <li class="list-attributes-element">Min_Direct_X: Min required Direct X(encoded as: Min_DirectX_coded)</li><br>
+                    <li class="list-attributes-element">Recom_HDD_Space: Recommended Hard Disk Space(encoded as: Recom_HDD_coded)</li><br>
+                    <li class="list-attributes-element">Recom_CPU_Max_Temp: Recommended CPU Max operating temperature</li><br>
+                    <li class="list-attributes-element">Min_GPU_Physical_Cores: Min required GPU cores</li><br>
+                    <li class="list-attributes-element">Recom_CPU_CPU_Speed: Recommended processing speed of CPU</li><br>
+                    <li class="list-attributes-element">Recom_CPU_Lithography: Recommended CPU Lithography</li><br>
+                    <li class="list-attributes-element">Min_CPU_Lithography: Min required CPU Lithography</li><br>
+                    <li class="list-attributes-element">Min_GPU_Memory_Speed: Min required GPU memory speed</li><br>
+                    <li class="list-attributes-element">Min_GPU_Pixel_Rate: Min required Pixel rate of GPU</li><br>
+                    <li class="list-attributes-element">Min_GPU_Texture_Rate: Min required GPU texture rendering rate</li><br>
+                    <li class="list-attributes-element">Min_GPU_Direct_X: Min required GPU DirectX</li><br>
+                    <li class="list-attributes-element">Min_GPU_Memory: Min required GPU memory</li><br>
+                    <li class="list-attributes-element">Min_GPU_Memory_Bandwidth: Min required GPU bandwidth</li><br>
+                </ol>
+            </div>
+            <div class="scree-plot">
+                <div class="grid-container">
+                    <div class="item1">
+                        <p style="color:rgb(130, 17, 153); font-weight: bold; font-size: 21px;"> Intrinsic Dimensionality Index : <span id='intrinsic-dimentionality-index'>None</span></p>
+                        <div id="scree-plot-graph"></div>
+                    </div>
+                    <div class="item2">
+                        <div id="imp-features-table-div" style="margin-top: -30%"></div>
+
+                    </div>
+                    <div class="'item3">
+                            <div id="scatterplot-matrix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="biplot">
+            <div id="biplot-graph"></div>
+        </div>
+        
+        <div class="col-md-10 col-xl-10 col-lg-10 col-sm-12 col-xs-12" id="lineplotContainer"></div>
+
+        <script src="static/js/elbow.js"></script>
+        <script src="static/js/scatterplot_matrix.js"></script>
+        <script src="static/js/biplot.js"></script>
+        <script src="static/js/feature_table_gen.js"></script>
+        <script src="static/js/screeplot.js"></script>
+        <script src="static/js/index.js"></script>
+    </body>
+</html>
