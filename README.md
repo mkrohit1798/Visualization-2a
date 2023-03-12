@@ -1,7 +1,3 @@
-_Name: Rohit Sanjay Inamdar_
-
-_SBU ID: 114504643_
-
 **CSE 564: Visualization(Spring 2023) as Basic Project CSE 522**
 
 **Assignment 2a Report**
@@ -45,21 +41,22 @@ Front page dashboard:
 
 The image below shows the front page of the visual interface. This is done using bootstrap
 
-![](RackMultipart20230312-1-w6hbti_html_fc431aecab33fe5c.png)
+![image](https://user-images.githubusercontent.com/125203016/224568624-aacb9246-8437-400b-823e-14ad07accde1.png)
 
 Menu Page:
 
 The image below shows the menu page which gets loaded on clicking the "Dashboard" button in the previous page. This page displays the attributes that are used for the PCA analysis.
 
-![](RackMultipart20230312-1-w6hbti_html_940e790f9a74da4c.png)
+![image](https://user-images.githubusercontent.com/125203016/224568643-b60b6776-02f2-4963-b07d-f79f0d4132da.png)
+
 
 1. Basic dimension reduction and visualization using PCA:
 
 In this task the PCA based scree plot is displayed in which the user can interact with the bars on the graph and select the required dimensionality indices i.e number of bars selected will set the index number and the biplot can be viewed as well. On moving the mouse cursor on the scree plot bar or the biplot attributes, we can view the percentage variance and the contribution of the attribute towards the principal components respectively
 
-![](RackMultipart20230312-1-w6hbti_html_2a3b67451a3cf2af.png)
+![image](https://user-images.githubusercontent.com/125203016/224568676-50249e56-29ce-4443-9236-2dbd98078ce6.png)
 
-![](RackMultipart20230312-1-w6hbti_html_3711ededa687c38f.png)
+![image](https://user-images.githubusercontent.com/125203016/224568686-4f57256d-0cc4-4661-a5fc-160f2b4e48f5.png)
 
 \*\* webpage zoomed out to avoid scrolling \*\*
 
@@ -67,8 +64,8 @@ In this task the PCA based scree plot is displayed in which the user can interac
 
 In this task, the intrinsic dimensionality index selected in the scree plot will display the feature table containing the top 4 features and their sum of squared loading values. A scatter plot matrix representing these 4 attributes with their unique coloured clusters on the basis of k means will be displayed.
 
-![](RackMultipart20230312-1-w6hbti_html_33ab297a9076a97a.png)
+![image](https://user-images.githubusercontent.com/125203016/224568704-765d9ad1-82ce-4368-8c69-6cc0c21e76ff.png)
 
 1. In this task the elbow plot describing the optimal value of k is displayed.
 
-![](RackMultipart20230312-1-w6hbti_html_c5807d0a354cd2ca.png)
+![image](https://user-images.githubusercontent.com/125203016/224568711-c27813b9-e8d9-4cc4-b562-7337c288c937.png)
